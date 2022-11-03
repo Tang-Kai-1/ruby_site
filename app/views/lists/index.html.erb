@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Climate Data</h1>
+
+<%= form_tag lists_path, method: :get do %>
+  <%= label_tag :search %>
+  <%= text_field_tag "search", nil, placeholder:"Find country" %>
+  <%= select_tag "income_level", options_for_select([nil,'Low income','Lower middle income','Upper middle income','High income'],nil) %>
+  <%= select_tag "region", options_for_select([nil,'Africa Eastern and Southern','Africa Western and Central','East Asia & Pacific','Europe & Central Asia','Latin America & Caribbean','Middle East & North Africa','North America','South Asia','Sub-Saharan Africa'],nil) %>
+  <%= submit_tag "search"%>
+<% end %>
+
+<%= link_to 'Clear', lists_path %>
+
+
+<table>
+  <thead>
+    <tr>
+      <th><%= sortable "country", "Country" %></th>
+      <th><%= sortable "country_code", "Country code" %></th>
+      <th><%= sortable "region", "Region" %></th>
+      <th><%= sortable "income_level", "Income level" %></th>
+      <th><%= sortable "average", "Average" %></th>
+      <th><%= sortable "year_min", "Lowest year" %></th>
+      <th><%= sortable "min", "Min" %></th>
+      <th><%= sortable "year_max", "Highest year" %></th>
+      <th><%= sortable "max", "Max" %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= list.country %></td>
+        <td><%= list.country_code %></td>
+        <td><%= list.region %></td>
+        <td><%= list.income_level %></td>
+        <td><%= list.average %></td>
+        <td><%= list.year_min %></td>
+        <td><%= list.min %></td>
+        <td><%= list.year_max %></td>
+        <td><%= list.max %></td>
+        <td><%= link_to 'Show', list %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

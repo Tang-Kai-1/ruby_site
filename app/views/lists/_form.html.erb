@@ -1,0 +1,212 @@
+<%= form_with(model: list) do |form| %>
+  <% if list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(list.errors.count, "error") %> prohibited this list from being saved:</h2>
+
+      <ul>
+        <% list.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country_code %>
+    <%= form.text_field :country_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :income_level %>
+    <%= form.text_field :income_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average %>
+    <%= form.text_field :average %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_min %>
+    <%= form.number_field :year_min %>
+  </div>
+
+  <div class="field">
+    <%= form.label :min %>
+    <%= form.text_field :min %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_max %>
+    <%= form.number_field :year_max %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max %>
+    <%= form.text_field :max %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_one %>
+    <%= form.text_field :year_one %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_two %>
+    <%= form.text_field :year_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_three %>
+    <%= form.text_field :year_three %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_four %>
+    <%= form.text_field :year_four %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_five %>
+    <%= form.text_field :year_five %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_six %>
+    <%= form.text_field :year_six %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_seven %>
+    <%= form.text_field :year_seven %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_eight %>
+    <%= form.text_field :year_eight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_nine %>
+    <%= form.text_field :year_nine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_ten %>
+    <%= form.text_field :year_ten %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_eleven %>
+    <%= form.text_field :year_eleven %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twelve %>
+    <%= form.text_field :year_twelve %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_thirteen %>
+    <%= form.text_field :year_thirteen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_fourteen %>
+    <%= form.text_field :year_fourteen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_fiveteen %>
+    <%= form.text_field :year_fiveteen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_sixteen %>
+    <%= form.text_field :year_sixteen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_seventeen %>
+    <%= form.text_field :year_seventeen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_eighteen %>
+    <%= form.text_field :year_eighteen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_nineteen %>
+    <%= form.text_field :year_nineteen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twenty %>
+    <%= form.text_field :year_twenty %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentyone %>
+    <%= form.text_field :year_twentyone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentytwo %>
+    <%= form.text_field :year_twentytwo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentythree %>
+    <%= form.text_field :year_twentythree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentyfour %>
+    <%= form.text_field :year_twentyfour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentyfive %>
+    <%= form.text_field :year_twentyfive %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentysix %>
+    <%= form.text_field :year_twentysix %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentyseven %>
+    <%= form.text_field :year_twentyseven %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentyeight %>
+    <%= form.text_field :year_twentyeight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_twentynine %>
+    <%= form.text_field :year_twentynine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_thirty %>
+    <%= form.text_field :year_thirty %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

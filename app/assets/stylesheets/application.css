@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.country-data{
+    display: flex;
+    justify-content: space-between;
+}
+.data-graph{
+    width: 800px;
+}
+.title{
+    text-align: center;
+}

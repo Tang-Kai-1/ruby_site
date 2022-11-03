@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'Back', lists_path %>
+<h1 class="title">
+  <strong><%= @list.country %></strong>
+</h1>
+
+<div class="country-data">
+  <div>
+    <p>
+      <strong>Country code:</strong>
+      <%= @list.country_code %>
+    </p>
+
+    <p>
+      <strong>Region:</strong>
+      <%= @list.region %>
+    </p>
+
+    <p>
+      <strong>Income level:</strong>
+      <%= @list.income_level %>
+    </p>
+
+    <p>
+      <strong>Average emissions:</strong>
+      <%= @list.average %>
+      (tons) per capita
+    </p>
+
+    <p>
+      <strong>Lowest year:</strong>
+      <%= @list.year_min %>
+    </p>
+
+    <p>
+      <strong>Lowest emisisons:</strong>
+      <%= @list.min %>
+      (tons) per capita
+    </p>
+
+    <p>
+      <strong>Highest year:</strong>
+      <%= @list.year_max %>
+    </p>
+
+    <p>
+      <strong>Highest emisisons:</strong>
+      <%= @list.max %>
+      (tons) per capita
+    </p>
+  </div>
+  <div class="data-graph">
+    <%= column_chart [["1990", @list.year_one], ["1991", @list.year_two],
+    ["1992", @list.year_three],["1993",@list.year_four],
+    ["1994",@list.year_five],["1995",@list.year_six],
+    ["1996",@list.year_seven],["1997",@list.year_eight],
+    ["1998", @list.year_nine],["1999",@list.year_ten],
+    ["2000",@list.year_eleven],["2001",@list.year_twelve],
+    ["2002",@list.year_thirteen],["2003",@list.year_fourteen],
+    ["2004", @list.year_fiveteen],["2005",@list.year_sixteen],
+    ["2006",@list.year_seventeen],["2007",@list.year_eighteen],
+    ["2008",@list.year_nineteen],["2009",@list.year_twenty],
+    ["2010", @list.year_twentyone],["2011",@list.year_twentytwo],
+    ["2012",@list.year_twentythree],["2013",@list.year_twentyfour],
+    ["2014",@list.year_twentyfive],["2015",@list.year_twentysix],
+    ["2016", @list.year_twentyseven],["2017",@list.year_twentyeight],
+    ["2018",@list.year_twentynine],["2019",@list.year_thirty]]%>
+  <div>
+ </div>
+
+
